@@ -1,0 +1,117 @@
+:root {
+    --box-main: #2ecc71;
+    --box-sec: #3498db;
+    --box-bg: #40739e;
+    --box-roundness: 20px;
+    --box-corner-roundness: 24px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #40739e;
+}
+.box {
+    width: 300px;
+    padding: 40px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--box-bg);
+    text-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    border-radius: var(--box-roundness);
+}
+.box h1,
+.box h2,
+.box h3,
+.box h4,
+.box h5,
+.box h6 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box p {
+    color: gray;
+    text-transform: lowercase;
+}
+.aniform,
+.anipar {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--box-sec);
+    padding: 14px 10px;
+    width: 190px;
+    outline: none;
+    color: white;
+    border-radius: var(--box-corner-roundness);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.anipar:hover {
+    width: 270px;
+    border-color: var(--box-main);
+}
+.aniform:focus {
+    width: 270px;
+    border-color: var(--box-main);
+}
+.box a,
+.box a:visited {
+    color: white;
+}
+.box button,
+.link {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--box-main);
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: var(--box-corner-roundness);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.box button:hover,
+.link:hover {
+    background: var(--box-main);
+}
+.link-inv {
+    border: 0;
+    background: var(--box-main);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid var(--box-main);
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: var(--box-corner-roundness);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link-inv:hover {
+    background: none;
+}
+@media screen and (max-width: 411px) {
+    .box {
+        width: 290px;
+        padding: 10px;
+    }
+}
+img {
+    width: 100%;
+    border-radius: 15px;
+}

@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #40739e;
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.box h1, .box h2, .box h3, .box h4, .box h5, .box h6{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box p{
+    color: gray;
+    text-transform: lowercase;
+}
+
+.anipar, .aniform{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.anipar:hover{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.aniform:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.box a, .box a:visited{
+    color: white;
+    
+}
+
+.box button, .link{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.box button:hover, .link:hover{
+    background: #2ecc71;
+}
+
+@media screen and (max-width: 411px) {
+    .box {width: 270px; padding: 10px;}
+}
